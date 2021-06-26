@@ -80,6 +80,7 @@ function canBuildNote(magazine, note) {
       // if histogram letter count greater or equal to note
       // for each letter than we can create ransom note
      let letter = magazineLetters[idx];
+     console.log('letter ', letter)
       // if magazine histogram letter count >= note letter count
      console.log(magazineHash[letter], ' magazineHash[letter] >= hashNote[letter] ', hashNote[letter])
      if (magazineHash[letter] >= hashNote[letter]) {
