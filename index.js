@@ -70,7 +70,6 @@ function canBuildNote(magazine, note) {
     
     const hashNote = buildHistogram(noteArray);
     const magazineHash = buildHistogram(magazine);
-    const magazineLetters = Object.keys(magazineHash);
     console.log('hmagazine ', magazineHash, ' hnote ', hashNote)
     console.log('magazineLetters ', magazineLetters)
     
@@ -83,8 +82,8 @@ function canBuildNote(magazine, note) {
       // if magazine histogram letter count >= note letter count
      console.log(magazineHash[letter], ' magazineHash[letter] >= hashNote[letter] ', hashNote[letter])
      if (magazineHash[letter] >= hashNote[letter]) {
-       let letterIdx = magazineLetters.indexOf(letter);
-       if (magazineLetters[letterIdx] === letter) {
+       let letterIdx = magazine.indexOf(letter);
+       if (magazine[letterIdx] === letter) {
          result = true;
        }
      } else {
