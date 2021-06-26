@@ -73,6 +73,7 @@ function canBuildNote(magazine, note) {
     const magazineLetters = Object.keys(magazineHash);
     console.log('hmagazine ', magazineHash, ' hnote ', hashNote)
     console.log('magazineLetters ', magazineLetters)
+    
     for (const letter in hashNote) {
       // if histogram letter count greater or equal to note
       // for each letter than we can create ransom note
