@@ -86,6 +86,7 @@ function canBuildNote(magazine, note) {
        }
      } else {
        result = false;
+       break;
      }
     }
     
